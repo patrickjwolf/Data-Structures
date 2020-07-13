@@ -19,7 +19,21 @@ class Stack:
         pass
 
     def push(self, value):
-        pass
-
+        if self.head == None: 
+            self.head=Node(data) 
+              
+        else: 
+            newnode = Node(data) 
+            newnode.next = self.head 
+            self.head = newnode
     def pop(self):
-        pass
+        if self.isempty(): 
+            return None
+              
+        else: 
+            # Removes the head node and makes  
+            #the preceeding one the new head 
+            poppednode = self.head 
+            self.head = self.head.next
+            poppednode.next = None
+            return poppednode.data 
