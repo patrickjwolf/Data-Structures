@@ -146,8 +146,15 @@ class LinkedList:
             current = current.get_next()
         return max_value
 
-class Stack:
-    pass
+# my_ll = LinkedList()
+# my_ll.add_to_tail(1)
+# my_ll.add_to_tail(2)
+# my_ll.add_to_tail(3)
 
-class Queue:
-    pass
+# reverse_ll(my_ll)
+
+# class Stack:
+#     pass
+
+# class Queue:
+#     pass
